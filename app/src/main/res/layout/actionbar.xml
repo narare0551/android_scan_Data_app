@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--    <LinearLayout-->
+<!--        xmlns:android="http://schemas.android.com/apk/res/android"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="match_parent"-->
+<!--        android:gravity="center"-->
+<!--        android:orientation="vertical"-->
+<!--        android:background="@drawable/radius"-->
+<!--        >-->
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:weightSum="3">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:layout_weight="1.5"
+        android:weightSum="2">
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="0.5">
+        <ImageView
+            android:id="@+id/left_menu"
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.5"
+            android:paddingRight="3dp"
+            android:paddingLeft="-20dp"
+            android:src="@drawable/arrow"/>
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="1dp"
+            android:gravity="center_vertical"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:layout_height="match_parent"
+            android:layout_weight="1.5"
+            android:text="title"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="right"
+        android:orientation="horizontal">
+
+        <ImageView android:id="@+id/bluetooth"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="0dp"
+            android:layout_marginLeft="10dp"
+            android:title="블루투스"
+            android:src="@drawable/icon_blt_on"/>
+    </LinearLayout>
+</LinearLayout>
+
