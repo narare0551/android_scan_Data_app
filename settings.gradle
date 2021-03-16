@@ -1,2 +1,0 @@
-include ':app'
-rootProject.name = "Ble_gatt_example"
